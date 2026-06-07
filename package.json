@@ -1,0 +1,14 @@
+{
+  "name": "lokta-typst",
+  "version": "0.1.0",
+  "description": "Lokta editorial document themes for Typst, with vendored static fonts.",
+  "license": "MIT",
+  "scripts": {
+    "install:local": "node install.mjs",
+    "example": "typst compile --font-path fonts example.typ examples/example.pdf"
+  },
+  "keywords": ["typst", "typst-package", "template", "editorial", "lokta", "design-system"],
+  "author": "Adam Munawar Rahman",
+  "repository": { "type": "git", "url": "git+https://github.com/msradam/lokta-typst.git" },
+  "homepage": "https://github.com/msradam/lokta-typst#readme"
+}
