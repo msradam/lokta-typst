@@ -98,3 +98,21 @@ mmdc -c lokta-mermaid.json -C lokta-mermaid.print.css -i diagram.mmd -o diagram.
 MIT. Fonts are SIL OFL. Part of the [Lokta](https://github.com/msradam/lokta)
 design system, drawn from the cookbook *Cuisine on Screen* (Sachiyo Harada,
 Prestel) and Professor Siddika Kabir's *Ranna Khaddo Pushti*.
+
+## lokta-hitec
+
+`lokta-hitec/` mirrors the upstream [HITEC](https://github.com/ShabbyGayBar/hitec)
+technical-document template API 1:1, wearing Lokta tokens and furniture. An
+existing HITEC document compiles by changing only the import.
+
+```typ
+#import "lokta-hitec/lib.typ": *
+#let (title, author, company, confidential, date, double-sided, print,
+      doc, title-page, title-block) = documentclass(title: [Report], author: "A. Author")
+#show: doc
+#title-block()
+```
+
+```sh
+typst compile --font-path fonts lokta-hitec/example.typ
+```
